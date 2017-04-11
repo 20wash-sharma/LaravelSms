@@ -26,5 +26,8 @@ Route::get('/profile',['uses'=>'UserController@profile','as'=>'user.profile']);
 Route::post('/updateProfile',['uses'=>'UserController@updateProfile','as'=>'updateprofile']);
 
 Route::post('/reply',['uses'=>'MessageController@reply','as'=>'message.reply']);
+Route::get('/excel',['uses'=>'MessageController@excelimportexport','as'=>'message.importexport']);
+Route::post('/importexcel',['uses'=>'MessageController@import','as'=>'message.importexcel']);
+Route::get('/exportexcel',['uses'=>'MessageController@export','as'=>'message.exportexcel']);
 
 
